@@ -16,10 +16,12 @@ El modelo se basa en un sólido trabajo científico del dominio de la investigac
 **El modelo asume que un bien o servicio homogéneo se transporta a través de una red. Esta contiene nodos de suministro que brindan el bien o servicio, nodos de demanda que consumen el bien o servicio y nodos de tránsito que lo transfieren a otros nodos**. Para representar gráficamente el modelo, se da un gráfico simplificado G = (V, E), donde V representa un conjunto de nodos (los círculos en la Fig.1 y en todas las siguientes figuras), y E un conjunto de arcos (las flechas en la figura 1 y todas las figuras siguientes). El conjunto de nodos se divide en V = VA ∪ VN ∪ VT, donde VA es el conjunto de ***"nodos de suministro”, VN el conjunto de “nodos de demanda” y VT el conjunto de “nodos de tránsito”***. El conjunto de arcos E representa las conexiones entre los objetos. En este informe, un arco e ∈ E es indicado como e o por sus nodos finales e = (v, w). 
 
 
+
 <img src="imagenes/FIG%20(1).PNG" width="400">
 
 
-Para cada nodo v ∈ V, si v ∈ VA, puede proporcionar un suministro (no negativo) av, y si v ∈ VN, tiene una demanda (no negativa) nv. Cada arco e ∈ E tiene una capacidad ue, que es el flujo máximo de un bien o servicio a través del arco (durante un tiempo dado), y costo ce por cada unidad del bien o servicio transportado por este arco.
+
+Para cada nodo v ∈ V, si v ∈ VA, puede proporcionar un suministro (no negativo) av, y si v ∈ VN, tiene una demanda (no negativa) nv. **Cada arco e ∈ E tiene una capacidad ue, que es el flujo máximo de un bien o servicio a través del arco (durante un tiempo dado), y costo ce por cada unidad del bien o servicio transportado por este arco.**
 La Figura 1 ilustra una determinada configuración para un sistema con cinco nodos. En este ejemplo específico, el nodo 1 es un nodo de suministro con un suministro de av = 7 y el nodo 5 es un nodo de demanda con una demanda de nv = 5. Todos los demás nodos son nodos de tránsito. Cada arco e ∈ E está representado por una flecha y un par de números ue; ce que indican la capacidad y el costo unitario del arco.
 Se busca una solución para un flujo factible x ∈ IRE que minimice el costo total (llamado flujo de costo óptimo). Por lo tanto, se debe encontrar un flujo xe respectivo para cada arco e ∈ E. Para un nodo dado v ∈ V, la entrada neta fx (v) se define como la entrada total menos salida total, formalmente:
 
@@ -27,7 +29,7 @@ Se busca una solución para un flujo factible x ∈ IRE que minimice el costo to
 <img src="imagenes/FOR%20(1).PNG" width="300">
 
 
-Un flujo es factible si se satisfacen tanto las restricciones de flujo, como las restricciones de capacidad. Las restricciones de flujo establecen que un nodo de suministro no puede entregar a otro nodo más que su oferta, un nodo de demanda debe satisfacer propiamente la demanda, y un nodo de tránsito tiene que transmitir el flujo sin pérdidas:
+Un flujo es factible si se satisfacen tanto las restricciones de flujo, como las restricciones de capacidad. **Las restricciones de flujo establecen que un nodo de suministro no puede entregar a otro nodo más que su oferta, un nodo de demanda debe satisfacer propiamente la demanda, y un nodo de tránsito tiene que transmitir el flujo sin pérdidas:**
 
 
 
@@ -37,24 +39,37 @@ Un flujo es factible si se satisfacen tanto las restricciones de flujo, como las
 Las limitaciones de la capacidad garantizan que no se supere la capacidad de los arcos:
 
 
-FÓRMULA 3
+<img src="imagenes/FOR%20(3).PNG" width="300">
+
 
 Entre todos los flujos factibles, buscamos encontrar un flujo x de costo mínimo
 
 
-FÓRMULA 4
+<img src="imagenes/FOR%20(4).PNG" width="300">
+
 
 Juntas, estas condiciones producen el siguiente problema de flujo de costo mínimo (P1):
 
-FÓRMULA 5
+
+<img src="imagenes/FOR%20(5).PNG" width="200">
+
 
 Sujeto a: 
 
 
-FÓRMULA 6
+
+<img src="imagenes/FOR%20(6).PNG" width="300">
 
 
-FIGURA 2
+
+
+
+
+
+
+<img src="imagenes/FIG%20(2).PNG" width="450">
+
+
 
 La figura 2 da una solución óptima para el ejemplo especificado por la figura 1. Para cada arco con un flujo positivo, el valor de flujo calculado se da junto al arco y antes de la barra oblicua. Por ejemplo, el flujo del nodo 1 al nodo 2 es igual a  x12. En este ejemplo, el costo total de esta solución óptima es 12.
 
