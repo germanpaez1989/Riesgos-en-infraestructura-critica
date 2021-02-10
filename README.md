@@ -132,6 +132,7 @@ Se supone que el operador opera la red a un costo óptimo. En este caso el valor
 
 
 
+
 #### 3.3 Modelado de un escenario de ataque ####
 
 
