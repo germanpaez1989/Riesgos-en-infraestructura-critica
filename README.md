@@ -77,7 +77,11 @@ Sujeto a:
 La figura 2 da una solución óptima para el ejemplo especificado por la figura 1. Para cada arco con un flujo positivo, el valor de flujo calculado se da junto al arco y antes de la barra oblicua. Por ejemplo, el flujo del nodo 1 al nodo 2 es igual a  x12. En este ejemplo, el costo total de esta solución óptima es 12.
 
 
+
 #### 3.2 Inclusión de escasez y formulación estándar ####
+
+
+
 
 
 
@@ -129,6 +133,9 @@ Se supone que el operador opera la red a un costo óptimo. En este caso el valor
 
 
 #### 3.3 Modelado de un escenario de ataque ####
+
+
+
 
 
 
