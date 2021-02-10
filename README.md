@@ -23,13 +23,15 @@ La Figura 1 ilustra una determinada configuración para un sistema con cinco nod
 Se busca una solución para un flujo factible x ∈ IRE que minimice el costo total (llamado flujo de costo óptimo). Por lo tanto, se debe encontrar un flujo xe respectivo para cada arco e ∈ E. Para un nodo dado v ∈ V, la entrada neta fx (v) se define como la entrada total menos salida total, formalmente:
 
 
-FÓRMULA 1
+<img src="imagenes/FOR%20(1).PNG" width="300">
+
 
 Un flujo es factible si se satisfacen tanto las restricciones de flujo, como las restricciones de capacidad. Las restricciones de flujo establecen que un nodo de suministro no puede entregar a otro nodo más que su oferta, un nodo de demanda debe satisfacer propiamente la demanda, y un nodo de tránsito tiene que transmitir el flujo sin pérdidas:
 
 
 
-FÓRMULA 2
+<img src="imagenes/FOR%20(2).PNG" width="300">
+
 
 Las limitaciones de la capacidad garantizan que no se supere la capacidad de los arcos:
 
