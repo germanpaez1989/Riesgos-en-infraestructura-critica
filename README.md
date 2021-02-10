@@ -77,12 +77,7 @@ Sujeto a:
 La figura 2 da una solución óptima para el ejemplo especificado por la figura 1. Para cada arco con un flujo positivo, el valor de flujo calculado se da junto al arco y antes de la barra oblicua. Por ejemplo, el flujo del nodo 1 al nodo 2 es igual a  x12. En este ejemplo, el costo total de esta solución óptima es 12.
 
 
-
 #### 3.2 Inclusión de escasez y formulación estándar ####
-
-
-
-
 
 
 **El modelo anterior ahora se extiende y se aplica a una situación en la que la red no puede satisfacer completamente todas las demandas.** Esto se hace asignando un costo de penalización pv a cada nodo de demanda v ∈ V. Además, todas las restricciones de flujo son ahora descritas por ecuaciones para formular el problema en una forma estándar. Por lo tanto, se agregan los siguientes elementos al gráfico G = (V, E):
@@ -131,13 +126,7 @@ Sujeto a:
 Se supone que el operador opera la red a un costo óptimo. En este caso el valor de la solución optimizada de este modelo indica los costos operativos regulares.
 
 
-
-
 #### 3.3 Modelado de un escenario de ataque ####
-
-
-
-
 
 
 Se supone que un ataque a una red puede tener como objetivo tanto nodos como arcos. Si un arco es atacado, se vuelve inoperante, es decir, su capacidad se reduce a cero. Si un nodo es atacado, no puede entregar la oferta ni servir de nodo de tránsito, pero su demanda permanece inalterada. Esta situación se modela reduciendo a cero la capacidad de todos los arcos interrumpidos como consecuencia del ataque.
