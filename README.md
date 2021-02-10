@@ -98,20 +98,32 @@ bv=
 La Figura 3 ilustra estas modificaciones con un costo de penalización unitario de 100. Este problema extendido ahora se puede describir como se muestra en G ′ = (V ′, E ′):
 
 
-FÓRMULA 8
+<img src="imagenes/FOR%20(8).PNG" width="250">
 
 
-FIGURA 3
+
+
+<img src="imagenes/FIG%20(3).PNG" width="400">
+
+
+
 
 Sujeto a:
 
 
-FÓRMULA 9
+
+<img src="imagenes/FOR%20(9).PNG" width="300">
+
+
+
 
 Se supone que el operador opera la red a un costo óptimo. En este caso el valor de la solución optimizada de este modelo indica los costos operativos regulares.
 
 
-3.3 Modelado de un escenario de ataque
+
+#### 3.3 Modelado de un escenario de ataque ####
+
+
 
 Se supone que un ataque a una red puede tener como objetivo tanto nodos como arcos. Si un arco es atacado, se vuelve inoperante, es decir, su capacidad se reduce a cero. Si un nodo es atacado, no puede entregar la oferta ni servir de nodo de tránsito, pero su demanda permanece inalterada. Esta situación se modela reduciendo a cero la capacidad de todos los arcos interrumpidos como consecuencia del ataque.
 Un escenario de ataque U = (Vu,Eu) se define por los conjuntos de nodos atacados Vu ⊆ V y arcos Eu ⊆ E. Los seudo nodos y los seudo arcos no pueden ser atacados. Una solución válida para este escenario de ataque debe satisfacer las siguientes restricciones:
