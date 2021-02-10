@@ -9,10 +9,11 @@
 El modelo se basa en un sólido trabajo científico del dominio de la investigación de operaciones. Este se construye en base a trabajos anteriores de Brown, Golany y Alderson que han modelado y evaluado los ataques a las ICs.  Emplea programación lineal, teoría del flujo de red y aplica investigaciones previas sobre interdicción en las redes de IC. Por ejemplo, tanto la Oficina Federal Suiza de Protección Civil, el Departamento de Defensa de los Estados Unidos, y el Departamento de Seguridad Nacional de EE. UU. han priorizado los elementos de las infraestructuras críticas en un intento de generar una protección integral.
 
 
-3. ### Métodos ###
-3.1 #### Método Operativo ####
+### 3.Métodos ### 
 
-El modelo asume que un bien o servicio homogéneo se transporta a través de una red. Esta contiene nodos de suministro que brindan el bien o servicio, nodos de demanda que consumen el bien o servicio y nodos de tránsito que lo transfieren a otros nodos. Para representar gráficamente el modelo, se da un gráfico simplificado G = (V, E), donde V representa un conjunto de nodos (los círculos en la Fig.1 y en todas las siguientes figuras), y E un conjunto de arcos (las flechas en la figura 1 y todas las figuras siguientes). El conjunto de nodos se divide en V = VA ∪ VN ∪ VT, donde VA es el conjunto de "nodos de suministro”, VN el conjunto de “nodos de demanda” y VT el conjunto de “nodos de tránsito”. El conjunto de arcos E representa las conexiones entre los objetos. En este informe, un arco e ∈ E es indicado como e o por sus nodos finales e = (v, w). 
+#### 3.1 Método Operativo #### 
+
+**El modelo asume que un bien o servicio homogéneo se transporta a través de una red. Esta contiene nodos de suministro que brindan el bien o servicio, nodos de demanda que consumen el bien o servicio y nodos de tránsito que lo transfieren a otros nodos**. Para representar gráficamente el modelo, se da un gráfico simplificado G = (V, E), donde V representa un conjunto de nodos (los círculos en la Fig.1 y en todas las siguientes figuras), y E un conjunto de arcos (las flechas en la figura 1 y todas las figuras siguientes). El conjunto de nodos se divide en V = VA ∪ VN ∪ VT, donde VA es el conjunto de ***"nodos de suministro”, VN el conjunto de “nodos de demanda” y VT el conjunto de “nodos de tránsito”***. El conjunto de arcos E representa las conexiones entre los objetos. En este informe, un arco e ∈ E es indicado como e o por sus nodos finales e = (v, w). 
 
 
 <img src="imagenes/FIG%20(1).PNG" width="400">
