@@ -80,6 +80,7 @@ La figura 2 da una solución óptima para el ejemplo especificado por la figura 
 #### 3.2 Inclusión de escasez y formulación estándar ####
 
 
+
 **El modelo anterior ahora se extiende y se aplica a una situación en la que la red no puede satisfacer completamente todas las demandas.** Esto se hace asignando un costo de penalización pv a cada nodo de demanda v ∈ V. Además, todas las restricciones de flujo son ahora descritas por ecuaciones para formular el problema en una forma estándar. Por lo tanto, se agregan los siguientes elementos al gráfico G = (V, E):
 
 
