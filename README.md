@@ -17,7 +17,7 @@ El modelo se basa en un sólido trabajo científico del dominio de la investigac
 
 
 
-FIGURA 1
+<img src="imagenes/FIGURA%201.jpeg" width="300">
 
 
 
