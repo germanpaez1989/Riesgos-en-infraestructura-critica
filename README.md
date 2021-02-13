@@ -185,7 +185,7 @@ Si bien los operadores de IC pueden no saber exactamente cómo se atacará la re
 Además, el atacante está sujeto a la restricción del presupuesto:
 
 
-<img src="imagenes/FOR%20(14).PNG" width="250">
+<img src="imagenes/FOR%20(14).PNG" width="200">
 
 
 En un primer paso, el ataque se modela ajustando las capacidades del arco:
