@@ -42,7 +42,9 @@ Un flujo es factible si se satisfacen tanto las restricciones de flujo, como las
 Las limitaciones de la capacidad garantizan que no se supere la capacidad de los arcos:
 
 
+
 <img src="imagenes/FOR%20(3).PNG" width="300">
+
 
 
 Entre todos los flujos factibles, buscamos encontrar un flujo x de costo mínimo
