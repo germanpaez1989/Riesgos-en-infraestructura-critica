@@ -144,7 +144,7 @@ Una vez que estas restricciones se añaden al modelo, un determinado escenario d
 
 
 
-<img src="imagenes/FOR%20(11).PNG" width="250">
+<img src="imagenes/FOR%20(11).PNG" width="200">
 
 
 
@@ -152,7 +152,7 @@ sujeto a:
 
 
 
-<img src="imagenes/FOR%20(12).PNG" width="300">
+<img src="imagenes/FOR%20(12).PNG" width="350">
 
 
 
@@ -160,7 +160,7 @@ sujeto a:
 Una vez más, se supone que la red funciona a un costo óptimo después de un ataque. Por lo tanto, la variable objetivo zU de una solución óptima de (P3) indica el costo de operación después de un ataque U = (Vu, Eu). Para cada ataque U, los costos KU se definen como:
 
 
-<img src="imagenes/FOR%20(13).PNG" width="250">
+<img src="imagenes/FOR%20(13).PNG" width="200">
 
 
 Por lo tanto, los costos operativos después de un ataque exceden los de las operaciones normales, es decir, zU ≥ z y por lo tanto KU ≥ 0 para cualquier ataque U. La figura 4 ilustra un escenario de ataque **U = (Vu, Eu) con Vu = {4} y Eu = {(1, 3)}.** Sólo se muestra el gráfico G en lugar de G′. Los arcos discontinuos no están disponibles después del ataque. Los arcos con un flujo positivo son subrayados. La demanda del nodo 5 todavía puede ser satisfecha. El costo total de operación después del ataque es de 27, lo que implica que el costo KU del ataque es KU = 27 - 12 = 15.
