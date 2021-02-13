@@ -212,33 +212,33 @@ sujeto a:
 **El problema (P4) es un problema de optimización de dos niveles al que no se pueden aplicar directamente los solucionadores matemáticos estándar como CPLEX o Gurobi.** Para transformar este bi-nivel en un problema de optimización de un solo nivel, (P4) se reformula siguiendo el enfoque descrito en Brown et al. [6]. Los flujos sobre los arcos atacados son penalizados, dejando que M denote un costo de penalización suficientemente alto. Por lo tanto, (P4) puede ser reescrito como:
 
 
-<img src="imagenes/FOR%20(18).PNG" width="400">
+<img src="imagenes/FOR%20(18).PNG" width="500">
 
 
 Los espacios de solución de (P4) y (P5) no son idénticos, pero si se elige correctamente M, las soluciones óptimas y los valores objetivos óptimos son los mismos en ambos problemas. (P5) sigue siendo un problema de optimización a dos niveles, pero el problema de optimización interna puede ser transformado usando la teoría de la dualidad [8]. Hablando informalmente, el problema de optimización interna (P5) se transforma en un problema de maximización mientras que el valor de la solución óptima permanece igual. Dos tipos de variables duales son introducidos: αv para cada limitación de flujo del nodo v ∈ V ′ en (P5) y βvw para cada limitación de capacidad del arco (v, w) ∈ E′ en (P5). Desarrollando las correspondientes restricciones duales para todas las variables primarias y la función de doble objetivo, lo siguiente se obtiene un doble problema:
 
 
-<img src="imagenes/FOR%20(19).PNG" width="200">
+<img src="imagenes/FOR%20(19).PNG" width="250">
 
 
 
 sujeto a:
 
 
-<img src="imagenes/FOR%20(20).PNG" width="400">
+<img src="imagenes/FOR%20(20).PNG" width="500">
 
 
 El problema de optimización interna de (P5) siempre tiene una solución y la óptima es limitada ya que todos los factores de costo ce son positivos. En este caso, el valor objetivo de la solución óptima de (P6) es igual al valor objetivo de (P5). Por lo tanto, el problema de optimización interna (P5) puede ser sustituido por (P6), lo que da lugar a la siguiente reformulación de (P5):
 
 
-<img src="imagenes/FOR%20(21).PNG" width="200">
+<img src="imagenes/FOR%20(21).PNG" width="250">
 
 
 
 Sujeto a:
 
 
-<img src="imagenes/FOR%20(22).PNG" width="400">
+<img src="imagenes/FOR%20(22).PNG" width="500">
 
 
 El problema (P7) es un programa lineal de números enteros mixtos. Aunque especificamos este problema aquí, **también observamos que los actuales solucionadores de optimización, como CPLEX y GUROBI, no son capaces de encontrar soluciones óptimas para instancias de gran tamaño de este problema programa lineal.**
