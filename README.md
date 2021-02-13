@@ -18,7 +18,10 @@ El modelo se basa en un sólido trabajo científico del dominio de la investigac
 
 
 <img src="imagenes/FIGURA%201.jpeg" width="300">
-*Figura 1.Operador de red simple con 5 nodos*
+
+
+**Figura 1.Operador de red simple con 5 nodos**
+
 
 
 Para cada nodo v ∈ V, si v ∈ VA, puede proporcionar un suministro (no negativo) av, y si v ∈ VN, tiene una demanda (no negativa) nv. **Cada arco e ∈ E tiene una capacidad ue, que es el flujo máximo de un bien o servicio a través del arco (durante un tiempo dado), y costo ce por cada unidad del bien o servicio transportado por este arco.**
