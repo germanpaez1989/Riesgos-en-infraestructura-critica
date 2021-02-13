@@ -185,7 +185,7 @@ Si bien los operadores de IC pueden no saber exactamente cómo se atacará la re
 Además, el atacante está sujeto a la restricción del presupuesto:
 
 
-<img src="imagenes/FOR%20(14).PNG" width="200">
+<img src="imagenes/FOR%20(14).PNG" width="250">
 
 
 En un primer paso, el ataque se modela ajustando las capacidades del arco:
@@ -199,7 +199,7 @@ En un primer paso, el ataque se modela ajustando las capacidades del arco:
 Las limitaciones de la primera línea se refieren a los seudo arcos cuyas capacidades permanecen inalteradas. Para un arco e = (v, w) ∈ E, la capacidad es ue a menos que se ataque el arco e o el nodo v o w. En cualquiera de estos casos, las restricciones de las líneas 2 a 4 especifican que la capacidad de cualquiera de esos nodos o arcos se reduce a cero. Por lo tanto, el siguiente modelo resulta:
 
 
-<img src="imagenes/FOR%20(16).PNG" width="200">
+<img src="imagenes/FOR%20(16).PNG" width="250">
 
 
 
