@@ -24,6 +24,8 @@ El modelo se basa en un sólido trabajo científico del dominio de la investigac
 
 
 
+
+
 Para cada nodo v ∈ V, si v ∈ VA, puede proporcionar un suministro (no negativo) av, y si v ∈ VN, tiene una demanda (no negativa) nv. **Cada arco e ∈ E tiene una capacidad ue, que es el flujo máximo de un bien o servicio a través del arco (durante un tiempo dado), y costo ce por cada unidad del bien o servicio transportado por este arco.**
 La Figura 1 ilustra una determinada configuración para un sistema con cinco nodos. En este ejemplo específico, el nodo 1 es un nodo de suministro con un suministro de av = 7 y el nodo 5 es un nodo de demanda con una demanda de nv = 5. Todos los demás nodos son nodos de tránsito. Cada arco e ∈ E está representado por una flecha y un par de números ue; ce que indican la capacidad y el costo unitario del arco.
 **Se busca una solución para un flujo factible x ∈ IRE que minimice el costo total (llamado flujo de costo óptimo).** Por lo tanto, se debe encontrar un flujo xe respectivo para cada arco e ∈ E. Para un nodo dado v ∈ V, la entrada neta fx (v) se define como la entrada total menos salida total, formalmente:
