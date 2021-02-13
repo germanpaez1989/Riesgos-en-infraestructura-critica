@@ -251,7 +251,7 @@ La tabla 1 a continuación da las estrategias de ataque óptimas para los difere
 Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráficos de los presupuestos de ataque de B = 1 y B = 13. Aunque el coste del ataque aumenta en un factor de más de 81 en este último escenario, sólo se atacan dos arcos más.
 
 
-FIGURA 5
+CUADRO
 
 
 FIGURA 6
