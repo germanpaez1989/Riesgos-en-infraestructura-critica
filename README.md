@@ -13,7 +13,7 @@ El modelo se basa en un sólido trabajo científico del dominio de la investigac
 
 #### 3.1 Método Operativo #### 
 
-**El modelo asume que un bien o servicio homogéneo se transporta a través de una red. Esta contiene nodos de suministro que brindan el bien o servicio, nodos de demanda que consumen el bien o servicio y nodos de tránsito que lo transfieren a otros nodos**. Para representar gráficamente el modelo, se da un gráfico simplificado G = (V, E), donde V representa un conjunto de nodos (los círculos en la Fig.1 y en todas las siguientes figuras), y E un conjunto de arcos (las flechas en la figura 1 y todas las figuras siguientes). El conjunto de nodos se divide en V = VA ∪ VN ∪ VT, donde VA es el conjunto de ***"nodos de suministro”, VN el conjunto de “nodos de demanda” y VT el conjunto de “nodos de tránsito”***. El conjunto de arcos E representa las conexiones entre los objetos. En este informe, un arco e ∈ E es indicado como e o por sus nodos finales e = (v, w). 
+**El modelo asume que un bien o servicio homogéneo se transporta a través de una red. Esta contiene nodos de suministro que brindan el bien o servicio, nodos de demanda que consumen el bien o servicio y nodos de tránsito que lo transfieren a otros nodos**. Para representar gráficamente el modelo, se da un gráfico simplificado **G = (V, E)**, donde V representa un conjunto de nodos (los círculos en la Fig.1 y en todas las siguientes figuras), y E un conjunto de arcos (las flechas en la figura 1 y todas las figuras siguientes). El conjunto de nodos se divide en **V = VA ∪ VN ∪ VT**, donde VA es el conjunto de ***"nodos de suministro”, VN el conjunto de “nodos de demanda” y VT el conjunto de “nodos de tránsito”***. El conjunto de arcos E representa las conexiones entre los objetos. En este informe, un arco e ∈ E es indicado como e o por sus nodos finales **e = (v, w).** 
 
 
 
@@ -23,7 +23,7 @@ FIGURA 1
 
 Para cada nodo v ∈ V, si v ∈ VA, puede proporcionar un suministro (no negativo) av, y si v ∈ VN, tiene una demanda (no negativa) nv. **Cada arco e ∈ E tiene una capacidad ue, que es el flujo máximo de un bien o servicio a través del arco (durante un tiempo dado), y costo ce por cada unidad del bien o servicio transportado por este arco.**
 La Figura 1 ilustra una determinada configuración para un sistema con cinco nodos. En este ejemplo específico, el nodo 1 es un nodo de suministro con un suministro de av = 7 y el nodo 5 es un nodo de demanda con una demanda de nv = 5. Todos los demás nodos son nodos de tránsito. Cada arco e ∈ E está representado por una flecha y un par de números ue; ce que indican la capacidad y el costo unitario del arco.
-Se busca una solución para un flujo factible x ∈ IRE que minimice el costo total (llamado flujo de costo óptimo). Por lo tanto, se debe encontrar un flujo xe respectivo para cada arco e ∈ E. Para un nodo dado v ∈ V, la entrada neta fx (v) se define como la entrada total menos salida total, formalmente:
+**Se busca una solución para un flujo factible x ∈ IRE que minimice el costo total (llamado flujo de costo óptimo).** Por lo tanto, se debe encontrar un flujo xe respectivo para cada arco e ∈ E. Para un nodo dado v ∈ V, la entrada neta fx (v) se define como la entrada total menos salida total, formalmente:
 
 
 <img src="imagenes/FOR%20(1).PNG" width="300">
@@ -130,35 +130,46 @@ Se supone que el operador opera la red a un costo óptimo. En este caso el valor
 #### 3.3 Modelado de un escenario de ataque ####
 
 
-Se supone que un ataque a una red puede tener como objetivo tanto nodos como arcos. Si un arco es atacado, se vuelve inoperante, es decir, su capacidad se reduce a cero. Si un nodo es atacado, no puede entregar la oferta ni servir de nodo de tránsito, pero su demanda permanece inalterada. Esta situación se modela reduciendo a cero la capacidad de todos los arcos interrumpidos como consecuencia del ataque.
-Un escenario de ataque U = (Vu,Eu) se define por los conjuntos de nodos atacados Vu ⊆ V y arcos Eu ⊆ E. Los seudo nodos y los seudo arcos no pueden ser atacados. Una solución válida para este escenario de ataque debe satisfacer las siguientes restricciones:
+**Se supone que un ataque a una red puede tener como objetivo tanto nodos como arcos. Si un arco es atacado, se vuelve inoperante, es decir, su capacidad se reduce a cero. Si un nodo es atacado, no puede entregar la oferta ni servir de nodo de tránsito, pero su demanda permanece inalterada. Esta situación se modela reduciendo a cero la capacidad de todos los arcos interrumpidos como consecuencia del ataque.**
+Un escenario de ataque **U = (Vu,Eu)** se define por los conjuntos de nodos atacados Vu ⊆ V y arcos Eu ⊆ E. Los pseudo nodos y los pseudo arcos no pueden ser atacados. Una solución válida para este escenario de ataque debe satisfacer las siguientes restricciones:
 
 
-FÓRMULA 10
+<img src="imagenes/FOR%20(10).PNG" width="300">
+
+
 
 Una vez que estas restricciones se añaden al modelo, un determinado escenario de ataque U = (Vu, Eu) se puede describir como: 
 
-FÓRMULA 11
+
+
+<img src="imagenes/FOR%20(11).PNG" width="300">
+
+
 
 sujeto a:
 
-FÓRMULA 12
 
-Si Vu = ∅ y Eu = ∅ entonces (P3) es equivalente a (P2). El problema (P3) es también un problema de flujo de costo mínimo, lo que implica que puede ser resuelto eficientemente y que los vectores de entrada enteros b y u producen soluciones enteras. Esta es una importante característica de los problemas de flujo de la red.
+
+<img src="imagenes/FOR%20(12).PNG" width="300">
+
+
+
+**Si Vu = ∅ y Eu = ∅ entonces (P3) es equivalente a (P2). El problema (P3) es también un problema de flujo de costo mínimo, lo que implica que puede ser resuelto eficientemente y que los vectores de entrada enteros b y u producen soluciones enteras.** Esta es una importante característica de los problemas de flujo de la red.
 Una vez más, se supone que la red funciona a un costo óptimo después de un ataque. Por lo tanto, la variable objetivo zU de una solución óptima de (P3) indica el costo de operación después de un ataque U = (Vu, Eu). Para cada ataque U, los costos KU se definen como:
 
 
-FÓRMULA 13
+<img src="imagenes/FOR%20(13).PNG" width="300">
 
-Por lo tanto, los costos operativos después de un ataque exceden los de las operaciones normales, es decir, zU ≥ z y por lo tanto KU ≥ 0 para cualquier ataque U. La figura 4 ilustra un escenario de ataque U = (Vu, Eu) con Vu = {4} y Eu = {(1, 3)}. Sólo se muestra el gráfico G en lugar de G′. Los arcos discontinuos no están disponibles después del ataque. Los arcos con un flujo positivo son subrayados. La demanda del nodo 5 todavía puede ser satisfecha. El costo total de operación después del ataque es de 27, lo que implica que el costo KU del ataque es KU = 27 - 12 = 15.
+
+Por lo tanto, los costos operativos después de un ataque exceden los de las operaciones normales, es decir, zU ≥ z y por lo tanto KU ≥ 0 para cualquier ataque U. La figura 4 ilustra un escenario de ataque **U = (Vu, Eu) con Vu = {4} y Eu = {(1, 3)}.** Sólo se muestra el gráfico G en lugar de G′. Los arcos discontinuos no están disponibles después del ataque. Los arcos con un flujo positivo son subrayados. La demanda del nodo 5 todavía puede ser satisfecha. El costo total de operación después del ataque es de 27, lo que implica que el costo KU del ataque es KU = 27 - 12 = 15.
 
 FIGURA 4
 
-La figura 5 ilustra un escenario de ataque en el que sólo se ataca el nodo 2, es decir, U2 = (Vu2,Eu2 ) con Vu2 = {2} y Eu2 = ∅. 
-La demanda en el nodo 5 no puede ser satisfecha en su totalidad. Una unidad no puede ser entregada, lo que implica un costo de penalización de 100. El costo total de funcionamiento de la red es ahora de 106, de tal manera que el ataque ha causado un daño de 106 – 12 = 94 unidades monetarias.
+La figura 5 ilustra un escenario de ataque en el que sólo se ataca el nodo 2, es decir, **U2 = (Vu2,Eu2 ) con Vu2 = {2} y Eu2 = ∅.** 
+La demanda en el nodo 5 no puede ser satisfecha en su totalidad. Una unidad no puede ser entregada, lo que implica un costo de penalización de 100. El costo total de funcionamiento de la red es ahora de 106, de tal manera que ***el ataque ha causado un daño de 106 – 12 = 94 unidades monetarias.***
 
 
-3.4  El modelo de atacante-defensor
+#### 3.4  El modelo de atacante-defensor ####
 
 Si bien los operadores de IC pueden no saber exactamente cómo se atacará la red en el futuro, pueden asumir que un atacante bien informado probablemente intentará el costo total de operación de la red. A continuación, se modifica el modelo para reflejar esta intención. Un atacante tiene un presupuesto determinado B. Cada elemento de la red tiene una cierta fuerza, que representa los recursos que un atacante debe invertir para desactivar este elemento. Específicamente, el atacante incurre en un costo de unidades pv para un ataque a cualquier nodo v ∈ V , y un costo de unidades pe para un ataque a cualquier arco e ∈ E. Las siguientes variables de decisión se introducen para modelar la decisión de ataque:
 
