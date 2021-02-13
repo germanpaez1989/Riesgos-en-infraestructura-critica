@@ -144,7 +144,7 @@ Una vez que estas restricciones se añaden al modelo, un determinado escenario d
 
 
 
-<img src="imagenes/FOR%20(11).PNG" width="300">
+<img src="imagenes/FOR%20(11).PNG" width="250">
 
 
 
@@ -160,7 +160,7 @@ sujeto a:
 Una vez más, se supone que la red funciona a un costo óptimo después de un ataque. Por lo tanto, la variable objetivo zU de una solución óptima de (P3) indica el costo de operación después de un ataque U = (Vu, Eu). Para cada ataque U, los costos KU se definen como:
 
 
-<img src="imagenes/FOR%20(13).PNG" width="300">
+<img src="imagenes/FOR%20(13).PNG" width="250">
 
 
 Por lo tanto, los costos operativos después de un ataque exceden los de las operaciones normales, es decir, zU ≥ z y por lo tanto KU ≥ 0 para cualquier ataque U. La figura 4 ilustra un escenario de ataque **U = (Vu, Eu) con Vu = {4} y Eu = {(1, 3)}.** Sólo se muestra el gráfico G en lugar de G′. Los arcos discontinuos no están disponibles después del ataque. Los arcos con un flujo positivo son subrayados. La demanda del nodo 5 todavía puede ser satisfecha. El costo total de operación después del ataque es de 27, lo que implica que el costo KU del ataque es KU = 27 - 12 = 15.
@@ -176,64 +176,75 @@ La demanda en el nodo 5 no puede ser satisfecha en su totalidad. Una unidad no p
 Si bien los operadores de IC pueden no saber exactamente cómo se atacará la red en el futuro, pueden asumir que un atacante bien informado probablemente intentará el costo total de operación de la red. A continuación, se modifica el modelo para reflejar esta intención. Un atacante tiene un presupuesto determinado B. Cada elemento de la red tiene una cierta fuerza, que representa los recursos que un atacante debe invertir para desactivar este elemento. Específicamente, el atacante incurre en un costo de unidades pv para un ataque a cualquier nodo v ∈ V , y un costo de unidades pe para un ataque a cualquier arco e ∈ E. Las siguientes variables de decisión se introducen para modelar la decisión de ataque:
 
 
-ye para todo e ∈ E : ye es 1 si el arco e es atacado y 0 en caso contrario,
+**ye para todo e ∈ E : ye es 1 si el arco e es atacado y 0 en caso contrario,**
 
-yv para todo v ∈ V : yv es 1 si el nodo v es atacado y 0 en caso contrario.
+**yv para todo v ∈ V : yv es 1 si el nodo v es atacado y 0 en caso contrario.**
 
 
 
 Además, el atacante está sujeto a la restricción del presupuesto:
 
 
-FÓRMULA 14
+<img src="imagenes/FOR%20(14).PNG" width="300">
+
 
 En un primer paso, el ataque se modela ajustando las capacidades del arco:
 
 
-FÓRMULA 15
+
+<img src="imagenes/FOR%20(15).PNG" width="300">
+
+
 
 Las limitaciones de la primera línea se refieren a los seudo arcos cuyas capacidades permanecen inalteradas. Para un arco e = (v, w) ∈ E, la capacidad es ue a menos que se ataque el arco e o el nodo v o w. En cualquiera de estos casos, las restricciones de las líneas 2 a 4 especifican que la capacidad de cualquiera de esos nodos o arcos se reduce a cero. Por lo tanto, el siguiente modelo resulta:
 
 
-FÓRMULA 16
+<img src="imagenes/FOR%20(16).PNG" width="300">
+
 
 
 sujeto a:
 
 
-FÓRMULA 17
-
-El problema (P4) es un problema de optimización de dos niveles al que no se pueden aplicar directamente los solucionadores matemáticos estándar como CPLEX o Gurobi. Para transformar este bi-nivel en un problema de optimización de un solo nivel, (P4) se reformula siguiendo el enfoque descrito en Brown et al. [6]. Los flujos sobre los arcos atacados son penalizados, dejando que M denote un costo de penalización suficientemente alto. Por lo tanto, (P4) puede ser reescrito como:
+<img src="imagenes/FOR%20(17).PNG" width="300">
 
 
-FÓRMULA 18
+**El problema (P4) es un problema de optimización de dos niveles al que no se pueden aplicar directamente los solucionadores matemáticos estándar como CPLEX o Gurobi.** Para transformar este bi-nivel en un problema de optimización de un solo nivel, (P4) se reformula siguiendo el enfoque descrito en Brown et al. [6]. Los flujos sobre los arcos atacados son penalizados, dejando que M denote un costo de penalización suficientemente alto. Por lo tanto, (P4) puede ser reescrito como:
+
+
+<img src="imagenes/FOR%20(18).PNG" width="300">
+
 
 Los espacios de solución de (P4) y (P5) no son idénticos, pero si se elige correctamente M, las soluciones óptimas y los valores objetivos óptimos son los mismos en ambos problemas. (P5) sigue siendo un problema de optimización a dos niveles, pero el problema de optimización interna puede ser transformado usando la teoría de la dualidad [8]. Hablando informalmente, el problema de optimización interna (P5) se transforma en un problema de maximización mientras que el valor de la solución óptima permanece igual. Dos tipos de variables duales son introducidos: αv para cada limitación de flujo del nodo v ∈ V ′ en (P5) y βvw para cada limitación de capacidad del arco (v, w) ∈ E′ en (P5). Desarrollando las correspondientes restricciones duales para todas las variables primarias y la función de doble objetivo, lo siguiente se obtiene un doble problema:
 
 
-FÓRMULA 19
+<img src="imagenes/FOR%20(19).PNG" width="300">
+
 
 
 sujeto a:
 
 
-FÓRMULA 20
+<img src="imagenes/FOR%20(20).PNG" width="300">
+
 
 El problema de optimización interna de (P5) siempre tiene una solución y la óptima es limitada ya que todos los factores de costo ce son positivos. En este caso, el valor objetivo de la solución óptima de (P6) es igual al valor objetivo de (P5). Por lo tanto, el problema de optimización interna (P5) puede ser sustituido por (P6), lo que da lugar a la siguiente reformulación de (P5):
 
 
-FÓRMULA 21
+<img src="imagenes/FOR%20(21).PNG" width="300">
+
 
 
 Sujeto a:
 
 
-FÓRMULA 22
-
-El problema (P7) es un programa lineal de números enteros mixtos. Aunque especificamos este problema aquí, también observamos que los actuales solucionadores de optimización, como CPLEX y GUROBI, no son capaces de encontrar soluciones óptimas para instancias de gran tamaño de este problema programa lineal.
+<img src="imagenes/FOR%20(22).PNG" width="300">
 
 
-3.5 Aplicación a un pequeño ejemplo
+El problema (P7) es un programa lineal de números enteros mixtos. Aunque especificamos este problema aquí, **también observamos que los actuales solucionadores de optimización, como CPLEX y GUROBI, no son capaces de encontrar soluciones óptimas para instancias de gran tamaño de este problema programa lineal.**
+
+
+#### 3.5 Aplicación a un pequeño ejemplo ####
 
 El modelo de atacante-defensor se aplica ahora al ejemplo de la red del operador. La fuerza pe de cada arco e ∈ E se indica en la tercera posición de las respectivas líneas de datos junto a los arcos. Los nodos se consideran infinitamente resistentes, es decir, pv = ∞ para todos los v ∈ V :
 La tabla 1 a continuación da las estrategias de ataque óptimas para los diferentes presupuestos de ataque B. Demuestra que no hay una correlación directa entre el presupuesto de ataque y el número de arcos atacados.
@@ -253,12 +264,12 @@ Además, un arco en particular ya no tiene por qué constituir un objetivo atrac
 
 
 
-4. Conclusión y perspectivas
+### 4. Conclusión y perspectivas ###
 
-En este capítulo, el costo de un ataque a las redes de infraestructura crítica se evaluó con un modelo genérico. Este modelo se implementó como un programa lineal de números enteros mixtos y se aplicó a varios ejemplos a pequeña escala. Los trabajos futuros podrían utilizar esta operacionalización para analizar las infraestructuras reales, como la energía o redes de agua potable.
+En este capítulo, el costo de un ataque a las redes de infraestructura crítica se evaluó con un modelo genérico. Este modelo se implementó como un programa lineal de números enteros mixtos y se aplicó a varios ejemplos a pequeña escala. **Los trabajos futuros podrían utilizar esta operacionalización para analizar las infraestructuras reales, como la energía o redes de agua potable.**
 
 Si bien los desafíos de modelar esas redes reales son cualquier cosa menos trivial, el trabajo relacionado puede basarse en algunas de las ideas presentadas aquí.
-Además, el modelo de atacante-defensor considerado aquí podría extenderse a los escenarios en los que el operador intente proteger la infraestructura en cuestión invirtiendo en la fortaleza de la red. Dicho operador utilizará un presupuesto de defensa particular para invertir en medidas que reduzcan al mínimo los costos máximos de un ataque (por ejemplo, aumentando la robustez o la redundancia de los componentes críticos). En futuros trabajos se podrán analizar las estrategias de inversión óptimas para este presupuesto de defensa. Si bien el análisis de esos modelos de defensa-atacante-defensor [4, 6] se basa en los escenarios básicos que hemos ilustrado aquí, es significativamente más complejo.
+Además, el modelo de atacante-defensor considerado aquí podría extenderse a los escenarios en los que el operador intente proteger la infraestructura en cuestión invirtiendo en la fortaleza de la red. Dicho operador utilizará un presupuesto de defensa particular para invertir en medidas que reduzcan al mínimo los costos máximos de un ataque (por ejemplo, aumentando la robustez o la redundancia de los componentes críticos). ***En futuros trabajos se podrán analizar las estrategias de inversión óptimas para este presupuesto de defensa.*** Si bien el análisis de esos modelos de defensa-atacante-defensor [4, 6] se basa en los escenarios básicos que hemos ilustrado aquí, es significativamente más complejo.
 
 
 
