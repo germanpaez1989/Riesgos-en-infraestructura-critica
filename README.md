@@ -17,7 +17,7 @@ El modelo se basa en un sólido trabajo científico del dominio de la investigac
 
 
 
-<img src="imagenes/FIG%20(1).PNG" width="400">
+FIGURA 1
 
 
 
@@ -68,7 +68,7 @@ Sujeto a:
 
 
 
-<img src="imagenes/FIG%20(2).PNG" width="450">
+FIGURA 2
 
 
 
@@ -110,7 +110,7 @@ La Figura 3 ilustra estas modificaciones con un costo de penalización unitario 
 
 
 
-<img src="imagenes/FIG%20(3).PNG" width="400">
+FIGURA 3
 
 
 
@@ -183,6 +183,8 @@ Las limitaciones de la primera línea se refieren a los seudo arcos cuyas capaci
 
 
 FÓRMULA 16
+
+
 sujeto a:
 
 
@@ -197,6 +199,7 @@ Los espacios de solución de (P4) y (P5) no son idénticos, pero si se elige cor
 
 
 FÓRMULA 19
+
 
 sujeto a:
 
@@ -235,25 +238,6 @@ FIGURA 7
 
 Además, un arco en particular ya no tiene por qué constituir un objetivo atractivo en una estrategia óptima a medida que aumenta el presupuesto de ataque. Este efecto se muestra al aumentar B de 1 a 2 y de 9 a 10. Por lo tanto, las estrategias de ataque óptimas no se anidan con respecto a un aumento de B. Esto implica que los elementos de la red no pueden ser priorizados por la criticidad, lo que confirma la crítica inicial de [3].
 
-3.6  Aplicación a la red Anytown
-
-  La Red Anytown es una herramienta de modelado para diversos problemas en el diseño de redes. Para aplicarlo, utilicé datos del Centro de Sistemas de Agua de la Universidad de Exeter. En todos los diagramas siguientes, los nodos T41 y T42 son depósitos de agua cuyo análisis no es necesario para los propósitos de nuestro modelo.
-El modelo permite flujos bidireccionales y por lo tanto especifica arcos bidireccionales cuya capacidad es idéntica. Todos los arcos tienen un costo unitario de 1 y el costo de penalización para todos los nodos de demanda es de 1000 por unidad faltante. Se supone que todos los nodos y arcos que inciden en el nodo 1 no pueden ser atacados, mientras que todos los demás arcos tienen una fuerza de 1. Calculamos los modelos y generamos sus correspondientes gráficos para todos los presupuestos de ataque. Por razones de espacio sólo se discute aquí una selección de los resultados. El conjunto completo de gráficos está disponible bajo petición.
-
-
- La figura 9 muestra los resultados de un ataque a la red para B = 3. Una subsección del gráfico (nodos 5, 6 y 7) está cortada tanto de los nodos restantes como de la fuente, como se ilustra en la línea discontinua en negrita.
-La figura 10 ilustra un ataque para B = 7. Mientras que el gráfico permanece fuertemente conectado, varios elementos centrales son atacados, y el flujo bidireccional se reduce significativamente, lo que implica un aumento significativo en el costo de operación.
- La figura 11 muestra los resultados para un presupuesto de ataque de B = 9. El gráfico se divide en dos sub-gráficos, y no se puede operar en otros nodos que no sean los directamente vinculados al nodo 1.
-
-
-
-FIGURA 8
-
-
-FIGURA 9
-
-
-FIGURA 10
 
 
 4. Conclusión y perspectivas
