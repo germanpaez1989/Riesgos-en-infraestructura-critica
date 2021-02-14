@@ -219,7 +219,7 @@ En un primer paso, el ataque se modela ajustando las capacidades del arco:
 
 
 
-Las limitaciones de la primera línea se refieren a los seudo arcos cuyas capacidades permanecen inalteradas. Para un arco e = (v, w) ∈ E, la capacidad es ue a menos que se ataque el arco e o el nodo v o w. En cualquiera de estos casos, las restricciones de las líneas 2 a 4 especifican que la capacidad de cualquiera de esos nodos o arcos se reduce a cero. Por lo tanto, el siguiente modelo resulta:
+Las limitaciones de la primera línea se refieren a los pseudo arcos cuyas capacidades permanecen inalteradas. Para un arco e = (v, w) ∈ E, la capacidad es ue a menos que se ataque el arco e o el nodo v o w. En cualquiera de estos casos, las restricciones de las líneas 2 a 4 especifican que la capacidad de cualquiera de esos nodos o arcos se reduce a cero. Por lo tanto, el siguiente modelo resulta:
 
 
 <img src="imagenes/FOR%20(16).PNG" width="200">
