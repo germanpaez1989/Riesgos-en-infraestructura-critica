@@ -269,7 +269,7 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 CUADRO
 
 
-<img src="imagenes/FIGURA%205.jpeg" width="310">
+<img src="imagenes/FIGURA%205.jpeg" width="300">
 
 **Figura 5- Modelo modificado con un ataque al nodo 2**
 
@@ -281,7 +281,7 @@ CUADRO
 
 
 
-<img src="imagenes/FIGURA%207.jpeg" width="380">
+<img src="imagenes/FIGURA%207.jpeg" width="370">
 
 **Figura 7- Estrategia de ataque óptima para B = 1**
 
