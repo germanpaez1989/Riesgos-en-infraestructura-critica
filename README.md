@@ -75,8 +75,10 @@ Sujeto a:
 
 
 
-FIGURA 2
+<img src="imagenes/FIGURA%202.jpeg" width="300">
 
+
+**Figura 2- Flujo óptimo de costo para la red dada por la Fig.1**
 
 
 
