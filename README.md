@@ -271,7 +271,7 @@ El problema (P7) es un programa lineal de números enteros mixtos. Aunque especi
 
 El modelo de atacante-defensor se aplica ahora al ejemplo de la red del operador. La fuerza pe de cada arco e ∈ E se indica en la tercera posición de las respectivas líneas de datos junto a los arcos. Los nodos se consideran infinitamente resistentes, es decir, **pv = ∞ para todos los v ∈ V :**
 La tabla 1 a continuación da las estrategias de ataque óptimas para los diferentes presupuestos de ataque B. Demuestra que no hay una correlación directa entre el presupuesto de ataque y el número de arcos atacados.
-Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráficos de los presupuestos de ataque de B = 1 y B = 13. Aunque el coste del ataque aumenta en un factor de más de 81 en este último escenario, sólo se atacan dos arcos más.
+Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráficos de los presupuestos de ataque de B = 1 y B = 13. Aunque el costo del ataque aumenta en un factor de más de 81 en este último escenario, sólo se atacan dos arcos más.
 
 
 
