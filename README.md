@@ -119,7 +119,7 @@ La Figura 3 ilustra estas modificaciones con un costo de penalización unitario 
 
 
 
-<img src="imagenes/FIGURA%203.jpeg" width="300">
+<img src="imagenes/FIGURA%203.jpeg" width="400">
 
 
 **Figura 3- Modelo modificado, forma estándar**
@@ -281,7 +281,7 @@ CUADRO
 
 
 
-<img src="imagenes/FIGURA%207.jpeg" width="300">
+<img src="imagenes/FIGURA%207.jpeg" width="350">
 
 **Figura 7- Estrategia de ataque óptima para B = 1**
 
