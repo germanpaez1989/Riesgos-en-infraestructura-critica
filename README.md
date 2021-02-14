@@ -293,13 +293,13 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 
 
 
-<img src="imagenes/FIGURA%207.jpeg" width="370">
+<img src="imagenes/FIGURA%207.jpeg" width="400">
 
 ***Figura 7- Estrategia de ataque óptima para B = 1***
 
 
 
-<img src="imagenes/FIGURA%208.jpeg" width="300">
+<img src="imagenes/FIGURA%208.jpeg" width="400">
 
 ***Figura 8- Estrategia de ataque óptima para B = 13***
 
