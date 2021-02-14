@@ -269,7 +269,7 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 
 
 
-<img src="imagenes/TABLA%201.jpeg" width="300">
+<img src="imagenes/TABLA%201.PNG" width="300">
 
 
 
