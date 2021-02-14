@@ -186,6 +186,14 @@ La figura 5 ilustra un escenario de ataque en el que sólo se ataca el nodo 2, e
 La demanda en el nodo 5 no puede ser satisfecha en su totalidad. Una unidad no puede ser entregada, lo que implica un costo de penalización de 100. El costo total de funcionamiento de la red es ahora de 106, de tal manera que ***el ataque ha causado un daño de 106 – 12 = 94 unidades monetarias.***
 
 
+
+<img src="imagenes/FIGURA%205.jpeg" width="300">
+
+***Figura 5- Modelo modificado con un ataque al nodo 2***
+
+
+
+
 #### 3.4  El modelo de atacante-defensor ####
 
 Si bien los operadores de IC pueden no saber exactamente cómo se atacará la red en el futuro, pueden asumir que un atacante bien informado probablemente intentará el costo total de operación de la red. A continuación, se modifica el modelo para reflejar esta intención. Un atacante tiene un presupuesto determinado B. Cada elemento de la red tiene una cierta fuerza, que representa los recursos que un atacante debe invertir para desactivar este elemento. Específicamente, el atacante incurre en un costo de unidades pv para un ataque a cualquier nodo v ∈ V , y un costo de unidades pe para un ataque a cualquier arco e ∈ E. Las siguientes variables de decisión se introducen para modelar la decisión de ataque:
@@ -278,11 +286,6 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 
 
 
-<img src="imagenes/FIGURA%205.jpeg" width="300">
-
-***Figura 5- Modelo modificado con un ataque al nodo 2***
-
-
 
 <img src="imagenes/FIGURA%206.jpeg" width="300">
 
@@ -293,6 +296,12 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 <img src="imagenes/FIGURA%207.jpeg" width="370">
 
 ***Figura 7- Estrategia de ataque óptima para B = 1***
+
+
+
+<img src="imagenes/FIGURA%208.jpeg" width="300">
+
+***Figura 8- Estrategia de ataque óptima para B = 13***
 
 
 
