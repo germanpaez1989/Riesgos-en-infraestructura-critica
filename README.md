@@ -269,8 +269,10 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 
 
 
+
 <img src="imagenes/TABLA%201.PNG" width="300">
 
+**Tabla 1- Ataques óptimos y costo de estos ataques para todos los presupuestos de ataque**
 
 
 
