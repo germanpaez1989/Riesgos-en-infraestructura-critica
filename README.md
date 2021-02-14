@@ -83,6 +83,7 @@ Sujeto a:
 
 
 
+
 La figura 2 da una solución óptima para el ejemplo especificado por la figura 1. Para cada arco con un flujo positivo, el valor de flujo calculado se da junto al arco y antes de la barra oblicua. Por ejemplo, el flujo del nodo 1 al nodo 2 es igual a  x12. En este ejemplo, el costo total de esta solución óptima es 12.
 
 
@@ -118,9 +119,10 @@ La Figura 3 ilustra estas modificaciones con un costo de penalización unitario 
 
 
 
+<img src="imagenes/FIGURA%203.jpeg" width="300">
 
-FIGURA 3
 
+**Figura 3- Modelo modificado, forma estándar**
 
 
 
@@ -172,7 +174,13 @@ Una vez más, se supone que la red funciona a un costo óptimo después de un at
 
 Por lo tanto, los costos operativos después de un ataque exceden los de las operaciones normales, es decir, zU ≥ z y por lo tanto KU ≥ 0 para cualquier ataque U. La figura 4 ilustra un escenario de ataque **U = (Vu, Eu) con Vu = {4} y Eu = {(1, 3)}.** Sólo se muestra el gráfico G en lugar de G′. Los arcos discontinuos no están disponibles después del ataque. Los arcos con un flujo positivo son subrayados. La demanda del nodo 5 todavía puede ser satisfecha. El costo total de operación después del ataque es de 27, lo que implica que el costo KU del ataque es KU = 27 - 12 = 15.
 
-FIGURA 4
+
+
+<img src="imagenes/FIGURA%204.jpeg" width="300">
+
+**Figura 4- Modelo modificado con un ataque al nodo 4**
+
+
 
 La figura 5 ilustra un escenario de ataque en el que sólo se ataca el nodo 2, es decir, **U2 = (Vu2,Eu2 ) con Vu2 = {2} y Eu2 = ∅.** 
 La demanda en el nodo 5 no puede ser satisfecha en su totalidad. Una unidad no puede ser entregada, lo que implica un costo de penalización de 100. El costo total de funcionamiento de la red es ahora de 106, de tal manera que ***el ataque ha causado un daño de 106 – 12 = 94 unidades monetarias.***
@@ -261,13 +269,21 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 CUADRO
 
 
-FIGURA 5
+<img src="imagenes/FIGURA%205.jpeg" width="300">
+
+**Figura 5- Modelo modificado con un ataque al nodo 2**
 
 
-FIGURA 6
+
+<img src="imagenes/FIGURA%206.jpeg" width="300">
+
+**Figura 6- Aplicación del modelo a un ataque a los arcos**
 
 
-FIGURA 7
+
+<img src="imagenes/FIGURA%207.jpeg" width="300">
+
+**Figura 7- Estrategia de ataque óptima para B = 1**
 
 
 Además, un arco en particular ya no tiene por qué constituir un objetivo atractivo en una estrategia óptima a medida que aumenta el presupuesto de ataque. Este efecto se muestra al aumentar B de 1 a 2 y de 9 a 10. Por lo tanto, las estrategias de ataque óptimas no se anidan con respecto a un aumento de B. Esto implica que los elementos de la red no pueden ser priorizados por la criticidad, lo que confirma la crítica inicial de [3].
