@@ -281,7 +281,7 @@ CUADRO
 
 
 
-<img src="imagenes/FIGURA%207.jpeg" width="350">
+<img src="imagenes/FIGURA%207.jpeg" width="380">
 
 **Figura 7- Estrategia de ataque óptima para B = 1**
 
