@@ -243,7 +243,7 @@ El problema de optimización interna de (P5) siempre tiene una solución y la ó
 Sujeto a:
 
 
-<img src="imagenes/FOR%20(22).PNG" width="600">
+<img src="imagenes/FOR%20(22).PNG" width="550">
 
 
 El problema (P7) es un programa lineal de números enteros mixtos. Aunque especificamos este problema aquí, **también observamos que los actuales solucionadores de optimización, como CPLEX y GUROBI, no son capaces de encontrar soluciones óptimas para instancias de gran tamaño de este problema programa lineal.**
