@@ -94,11 +94,11 @@ La figura 2 da una solución óptima para el ejemplo especificado por la figura 
 **El modelo anterior ahora se extiende y se aplica a una situación en la que la red no puede satisfacer completamente todas las demandas.** Esto se hace asignando un costo de penalización pv a cada nodo de demanda v ∈ V. Además, todas las restricciones de flujo son ahora descritas por ecuaciones para formular el problema en una forma estándar. Por lo tanto, se agregan los siguientes elementos al gráfico G = (V, E):
 
 
-**Un pseudo nodo de suministro va con suministroava=v∈VNnv**
+**Un pseudo nodo de suministro va con suministro Ava=v∈VNnv**
 
 Para cada nodo de demanda v ∈ VN, un arco (va, v) con un costo pv y una capacidad nv
 
-**Un pseudo nodo de demanda vn con demanda nvn= v∈VAav**
+**Un pseudo nodo de demanda vn con demanda Nvn= v∈VAav**
 
 Para cada nodo de suministro v∈VA ∪ {va}, un arco (v,vn ) con costo 0 y capacidad av
 
