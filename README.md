@@ -20,7 +20,7 @@ El modelo se basa en un sólido trabajo científico del dominio de la investigac
 <img src="imagenes/FIGURA%201.jpeg" width="300">
 
 
-**Figura 1.Operador de red simple con 5 nodos**
+***Figura 1.Operador de red simple con 5 nodos***
 
 
 
@@ -78,7 +78,7 @@ Sujeto a:
 <img src="imagenes/FIGURA%202.jpeg" width="300">
 
 
-**Figura 2- Flujo óptimo de costo para la red dada por la Fig.1**
+***Figura 2- Flujo óptimo de costo para la red dada por la Fig.1***
 
 
 
@@ -122,7 +122,7 @@ La Figura 3 ilustra estas modificaciones con un costo de penalización unitario 
 <img src="imagenes/FIGURA%203.jpeg" width="450">
 
 
-**Figura 3- Modelo modificado, forma estándar**
+***Figura 3- Modelo modificado, forma estándar***
 
 
 
@@ -178,7 +178,7 @@ Por lo tanto, los costos operativos después de un ataque exceden los de las ope
 
 <img src="imagenes/FIGURA%204.jpeg" width="300">
 
-**Figura 4- Modelo modificado con un ataque al nodo 4**
+***Figura 4- Modelo modificado con un ataque al nodo 4***
 
 
 
@@ -272,7 +272,7 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 
 <img src="imagenes/TABLA%201.PNG" width="300">
 
-**Tabla 1- Ataques óptimos y costo de estos ataques para todos los presupuestos de ataque**
+***Tabla 1- Ataques óptimos y costo de estos ataques para todos los presupuestos de ataque***
 
 
 
@@ -280,19 +280,19 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 
 <img src="imagenes/FIGURA%205.jpeg" width="300">
 
-**Figura 5- Modelo modificado con un ataque al nodo 2**
+***Figura 5- Modelo modificado con un ataque al nodo 2***
 
 
 
 <img src="imagenes/FIGURA%206.jpeg" width="300">
 
-**Figura 6- Aplicación del modelo a un ataque a los arcos**
+***Figura 6- Aplicación del modelo a un ataque a los arcos***
 
 
 
 <img src="imagenes/FIGURA%207.jpeg" width="370">
 
-**Figura 7- Estrategia de ataque óptima para B = 1**
+***Figura 7- Estrategia de ataque óptima para B = 1***
 
 
 
