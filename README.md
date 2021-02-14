@@ -259,6 +259,9 @@ Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráfico
 CUADRO
 
 
+FIGURA 5
+
+
 FIGURA 6
 
 
