@@ -266,7 +266,14 @@ La tabla 1 a continuación da las estrategias de ataque óptimas para los difere
 Para ilustrar este hecho, las Figuras 6, 7 y 8 muestran los respectivos gráficos de los presupuestos de ataque de B = 1 y B = 13. Aunque el coste del ataque aumenta en un factor de más de 81 en este último escenario, sólo se atacan dos arcos más.
 
 
-CUADRO
+
+
+
+<img src="imagenes/TABLA%201.jpeg" width="300">
+
+
+
+
 
 
 <img src="imagenes/FIGURA%205.jpeg" width="300">
@@ -284,6 +291,8 @@ CUADRO
 <img src="imagenes/FIGURA%207.jpeg" width="370">
 
 **Figura 7- Estrategia de ataque óptima para B = 1**
+
+
 
 
 Además, un arco en particular ya no tiene por qué constituir un objetivo atractivo en una estrategia óptima a medida que aumenta el presupuesto de ataque. Este efecto se muestra al aumentar B de 1 a 2 y de 9 a 10. Por lo tanto, las estrategias de ataque óptimas no se anidan con respecto a un aumento de B. Esto implica que los elementos de la red no pueden ser priorizados por la criticidad, lo que confirma la crítica inicial de [3].
