@@ -319,6 +319,11 @@ Además, el modelo de atacante-defensor considerado aquí podría extenderse a l
 
 
 
+### 5. Conclusiones personales: ###
+
+* El presente capítulo es un tema interesante para abordar y tomar como modelo a la hora de reforzar la defensa de infraestructuras críticas en Mendoza, como por ejemplo **las redes de agua potable y energía eléctrica**; pero, como bien dice el autor no es fácil generar estos modelos en los casos reales, que son generalmente más complejos.
+* Viendo que, para poder resolver los problemas de optimización aquí planteados, **utiliza CPLEX**; me doy cuenta la importancia que tiene manejar este tipo de herramientas. Por lo cual me genera la inquietud de aprender a utilizar este tipo de software.
+
 
 
 
